@@ -25,6 +25,11 @@
 		713D79C0184C144F0074321D /* AMSwiperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 713D79BF184C144F0074321D /* AMSwiperViewController.m */; };
 		713D79C4184C197F0074321D /* DirectionPanGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 713D79C3184C197F0074321D /* DirectionPanGestureRecognizer.m */; };
 		7149CC0E18DCA70B0031CDE7 /* AMMenuItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7149CC0D18DCA70B0031CDE7 /* AMMenuItemCell.m */; };
+		7149CC1418DCBCD60031CDE7 /* AMMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7149CC1318DCBCD60031CDE7 /* AMMenuViewController.m */; };
+		7149CC1718DCBE110031CDE7 /* AMMenuViewState.m in Sources */ = {isa = PBXBuildFile; fileRef = 7149CC1618DCBE110031CDE7 /* AMMenuViewState.m */; };
+		7149CC1A18DCBE220031CDE7 /* AMMenuViewStateSections.m in Sources */ = {isa = PBXBuildFile; fileRef = 7149CC1918DCBE220031CDE7 /* AMMenuViewStateSections.m */; };
+		7149CC1D18DCBF8E0031CDE7 /* AMMenuViewStateItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 7149CC1C18DCBF8E0031CDE7 /* AMMenuViewStateItems.m */; };
+		7149CC2018DCBF960031CDE7 /* AMMenuViewStateItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7149CC1F18DCBF960031CDE7 /* AMMenuViewStateItem.m */; };
 		71DCCB5418D12A15007DD1AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71DCCB5318D12A15007DD1AD /* Assets.xcassets */; };
 		71DCCB5A18D1D063007DD1AD /* AMRestaurantBeaconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DCCB5918D1D063007DD1AD /* AMRestaurantBeaconViewController.m */; };
 		71DCCB5C18D1D44B007DD1AD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71DCCB5B18D1D44B007DD1AD /* CoreLocation.framework */; };
@@ -41,7 +46,6 @@
 		71FB583418384A9800803C4E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 71FB583218384A9800803C4E /* InfoPlist.strings */; };
 		71FB583618384A9800803C4E /* air_menu_customerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FB583518384A9800803C4E /* air_menu_customerTests.m */; };
 		71FEA51818D2732300BA18AE /* AMRestaurantBeaconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DCCB5518D1D034007DD1AD /* AMRestaurantBeaconManager.m */; };
-		71FEA51B18D2767E00BA18AE /* AMMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FEA51A18D2767E00BA18AE /* AMMenuViewController.m */; };
 		71FEA51E18D276D500BA18AE /* AMCurrentOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FEA51D18D276D500BA18AE /* AMCurrentOrderViewController.m */; };
 		71FEA52118D276F100BA18AE /* AMPaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FEA52018D276F100BA18AE /* AMPaymentViewController.m */; };
 		71FEA52418D2770400BA18AE /* AMInstructionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FEA52318D2770400BA18AE /* AMInstructionsViewController.m */; };
@@ -122,6 +126,15 @@
 		713D79C3184C197F0074321D /* DirectionPanGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectionPanGestureRecognizer.m; sourceTree = "<group>"; };
 		7149CC0C18DCA70B0031CDE7 /* AMMenuItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMMenuItemCell.h; sourceTree = "<group>"; };
 		7149CC0D18DCA70B0031CDE7 /* AMMenuItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMMenuItemCell.m; sourceTree = "<group>"; };
+		7149CC1318DCBCD60031CDE7 /* AMMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMMenuViewController.m; sourceTree = "<group>"; };
+		7149CC1518DCBE110031CDE7 /* AMMenuViewState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMMenuViewState.h; sourceTree = "<group>"; };
+		7149CC1618DCBE110031CDE7 /* AMMenuViewState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMMenuViewState.m; sourceTree = "<group>"; };
+		7149CC1818DCBE220031CDE7 /* AMMenuViewStateSections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMMenuViewStateSections.h; sourceTree = "<group>"; };
+		7149CC1918DCBE220031CDE7 /* AMMenuViewStateSections.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMMenuViewStateSections.m; sourceTree = "<group>"; };
+		7149CC1B18DCBF8E0031CDE7 /* AMMenuViewStateItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMMenuViewStateItems.h; sourceTree = "<group>"; };
+		7149CC1C18DCBF8E0031CDE7 /* AMMenuViewStateItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMMenuViewStateItems.m; sourceTree = "<group>"; };
+		7149CC1E18DCBF960031CDE7 /* AMMenuViewStateItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMMenuViewStateItem.h; sourceTree = "<group>"; };
+		7149CC1F18DCBF960031CDE7 /* AMMenuViewStateItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMMenuViewStateItem.m; sourceTree = "<group>"; };
 		71DCCB5318D12A15007DD1AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71DCCB5518D1D034007DD1AD /* AMRestaurantBeaconManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMRestaurantBeaconManager.m; path = Other/AMRestaurantBeaconManager.m; sourceTree = "<group>"; };
 		71DCCB5818D1D063007DD1AD /* AMRestaurantBeaconViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMRestaurantBeaconViewController.h; sourceTree = "<group>"; };
@@ -146,7 +159,6 @@
 		71FB583518384A9800803C4E /* air_menu_customerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = air_menu_customerTests.m; sourceTree = "<group>"; };
 		71FEA51718D2724000BA18AE /* AMRestaurantBeaconManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AMRestaurantBeaconManager.h; path = Other/AMRestaurantBeaconManager.h; sourceTree = "<group>"; };
 		71FEA51918D2767E00BA18AE /* AMMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMMenuViewController.h; sourceTree = "<group>"; };
-		71FEA51A18D2767E00BA18AE /* AMMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMMenuViewController.m; sourceTree = "<group>"; };
 		71FEA51C18D276D500BA18AE /* AMCurrentOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMCurrentOrderViewController.h; sourceTree = "<group>"; };
 		71FEA51D18D276D500BA18AE /* AMCurrentOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMCurrentOrderViewController.m; sourceTree = "<group>"; };
 		71FEA51F18D276F100BA18AE /* AMPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMPaymentViewController.h; sourceTree = "<group>"; };
@@ -234,8 +246,6 @@
 				7109CBED18DA233600D6003E /* AMLineSpacer.m */,
 				7109CBEF18DA234000D6003E /* AMDotSpacer.h */,
 				7109CBF018DA234000D6003E /* AMDotSpacer.m */,
-				7149CC0C18DCA70B0031CDE7 /* AMMenuItemCell.h */,
-				7149CC0D18DCA70B0031CDE7 /* AMMenuItemCell.m */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -247,6 +257,50 @@
 				713D79C3184C197F0074321D /* DirectionPanGestureRecognizer.m */,
 			);
 			name = UI;
+			sourceTree = "<group>";
+		};
+		7149CC0F18DCBB4E0031CDE7 /* Instructions */ = {
+			isa = PBXGroup;
+			children = (
+				71FEA52218D2770400BA18AE /* AMInstructionsViewController.h */,
+				71FEA52318D2770400BA18AE /* AMInstructionsViewController.m */,
+			);
+			path = Instructions;
+			sourceTree = "<group>";
+		};
+		7149CC1018DCBBAF0031CDE7 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				71FEA51918D2767E00BA18AE /* AMMenuViewController.h */,
+				7149CC1318DCBCD60031CDE7 /* AMMenuViewController.m */,
+				7149CC1518DCBE110031CDE7 /* AMMenuViewState.h */,
+				7149CC1618DCBE110031CDE7 /* AMMenuViewState.m */,
+				7149CC1818DCBE220031CDE7 /* AMMenuViewStateSections.h */,
+				7149CC1918DCBE220031CDE7 /* AMMenuViewStateSections.m */,
+				7149CC1B18DCBF8E0031CDE7 /* AMMenuViewStateItems.h */,
+				7149CC1C18DCBF8E0031CDE7 /* AMMenuViewStateItems.m */,
+				7149CC1E18DCBF960031CDE7 /* AMMenuViewStateItem.h */,
+				7149CC1F18DCBF960031CDE7 /* AMMenuViewStateItem.m */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		7149CC1118DCBBCA0031CDE7 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				71FEA51C18D276D500BA18AE /* AMCurrentOrderViewController.h */,
+				71FEA51D18D276D500BA18AE /* AMCurrentOrderViewController.m */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		7149CC1218DCBBD10031CDE7 /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				71FEA51F18D276F100BA18AE /* AMPaymentViewController.h */,
+				71FEA52018D276F100BA18AE /* AMPaymentViewController.m */,
+			);
+			path = Payment;
 			sourceTree = "<group>";
 		};
 		71FB57FB18384A9800803C4E = {
@@ -398,6 +452,8 @@
 			children = (
 				7109CBDF18D94B7800D6003E /* AMMenuSectionCell.h */,
 				7109CBE018D94B7800D6003E /* AMMenuSectionCell.m */,
+				7149CC0C18DCA70B0031CDE7 /* AMMenuItemCell.h */,
+				7149CC0D18DCA70B0031CDE7 /* AMMenuItemCell.m */,
 			);
 			path = Order;
 			sourceTree = "<group>";
@@ -504,14 +560,10 @@
 				71DCCB5918D1D063007DD1AD /* AMRestaurantBeaconViewController.m */,
 				71FEA52818D289E800BA18AE /* AMOrderCreatorViewController.h */,
 				71FEA52918D289E800BA18AE /* AMOrderCreatorViewController.m */,
-				71FEA51918D2767E00BA18AE /* AMMenuViewController.h */,
-				71FEA51A18D2767E00BA18AE /* AMMenuViewController.m */,
-				71FEA51C18D276D500BA18AE /* AMCurrentOrderViewController.h */,
-				71FEA51D18D276D500BA18AE /* AMCurrentOrderViewController.m */,
-				71FEA51F18D276F100BA18AE /* AMPaymentViewController.h */,
-				71FEA52018D276F100BA18AE /* AMPaymentViewController.m */,
-				71FEA52218D2770400BA18AE /* AMInstructionsViewController.h */,
-				71FEA52318D2770400BA18AE /* AMInstructionsViewController.m */,
+				7149CC0F18DCBB4E0031CDE7 /* Instructions */,
+				7149CC1218DCBBD10031CDE7 /* Payment */,
+				7149CC1118DCBBCA0031CDE7 /* Order */,
+				7149CC1018DCBBAF0031CDE7 /* Menu */,
 			);
 			path = Order;
 			sourceTree = "<group>";
@@ -723,14 +775,18 @@
 				7109CBD218D7532A00D6003E /* AMVoucherViewController.m in Sources */,
 				7109CBE118D94B7800D6003E /* AMMenuSectionCell.m in Sources */,
 				71DCCB5A18D1D063007DD1AD /* AMRestaurantBeaconViewController.m in Sources */,
-				71FEA51B18D2767E00BA18AE /* AMMenuViewController.m in Sources */,
+				7149CC1A18DCBE220031CDE7 /* AMMenuViewStateSections.m in Sources */,
 				7109CBC818D6914900D6003E /* AMNavigationViewController.m in Sources */,
 				7109CBEB18DA232700D6003E /* AMFadingSpacer.m in Sources */,
 				71FEA5A818D6799B00BA18AE /* AMOrderViewController.m in Sources */,
 				7109CBDE18D7536000D6003E /* AMCreditCardViewController.m in Sources */,
 				71FEA52418D2770400BA18AE /* AMInstructionsViewController.m in Sources */,
+				7149CC2018DCBF960031CDE7 /* AMMenuViewStateItem.m in Sources */,
+				7149CC1718DCBE110031CDE7 /* AMMenuViewState.m in Sources */,
 				7109CBD518D7533500D6003E /* AMSearchViewController.m in Sources */,
+				7149CC1D18DCBF8E0031CDE7 /* AMMenuViewStateItems.m in Sources */,
 				71FEA51818D2732300BA18AE /* AMRestaurantBeaconManager.m in Sources */,
+				7149CC1418DCBCD60031CDE7 /* AMMenuViewController.m in Sources */,
 				71FB582118384A9800803C4E /* AMViewController.m in Sources */,
 				71FEA51E18D276D500BA18AE /* AMCurrentOrderViewController.m in Sources */,
 				71FEA52118D276F100BA18AE /* AMPaymentViewController.m in Sources */,

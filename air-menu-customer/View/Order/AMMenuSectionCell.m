@@ -59,6 +59,10 @@
     [self.button autoAlignAxis:ALAxisHorizontal toSameAxisOfView:self.textLabel];
     [self.button setStyle:kFRDLivelyButtonStyleCaretDown animated:NO];
     [self.button addTarget:self action:@selector(didTap:) forControlEvents:UIControlEventTouchUpInside];
+    self.button.tintColor = [UIColor colorWithRed:1.0f/255.0f green:57.0f/255.0f blue:83.0f/255.0f alpha:1.0];
+    NSMutableDictionary *options = [self.button.options mutableCopy];
+    [options setObject:[UIColor colorWithRed:1.0f/255.0f green:57.0f/255.0f blue:83.0f/255.0f alpha:1.0] forKey:kFRDLivelyButtonColor];
+    button.options = options;
 }
 
 -(void)setupSpacer

@@ -93,7 +93,7 @@
     UIView *marker = [[UIView alloc] initWithFrame:CGRectZero];
     self.marker = marker;
     [self.tabBar addSubview:self.marker];
-    self.marker.backgroundColor = [UIColor whiteColor];
+    self.marker.backgroundColor = [UIColor colorWithRed:1.0f/255.0f green:57.0f/255.0f blue:83.0f/255.0f alpha:1.0];
 }
 #pragma mark - Public API
 
