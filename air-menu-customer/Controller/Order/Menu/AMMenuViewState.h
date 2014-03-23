@@ -12,7 +12,8 @@
 @class AMMenuViewController;
 @interface AMMenuViewState : NSObject <UICollectionViewDataSource, UICollectionViewDelegate>
 @property (nonatomic, readwrite, weak) AMMenuViewController *viewController;
+@property (nonatomic, readwrite, weak) UICollectionView *collectionView;
 @property (nonatomic, readwrite, strong) AMRestaurant *restaurant;
 @property (nonatomic, readwrite, strong) AMMenu *menu;
--(id)initWithController:(AMMenuViewController *)controller restaurant:(AMRestaurant *)restaurant;
+-(id)initWithController:(AMMenuViewController *)controller restaurant:(AMRestaurant *)restaurant collectionView:(UICollectionView *)collectionView;
 @end

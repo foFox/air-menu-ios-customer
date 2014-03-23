@@ -27,7 +27,7 @@
     if(indexPath.row == 0)
     {
         AMMenuSectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"menu_section_cell" forIndexPath:indexPath];
-        cell.textLabel.text = [self.menu.menuSections[indexPath.row] name];
+        cell.textLabel.text = [self.sectionOfItems name];
         cell.indexPath = indexPath;
         cell.delegate = self;
         return cell;
@@ -45,7 +45,28 @@
 
 -(void)didTapCell:(AMMenuSectionCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
-    self.viewController.currentState = self.viewController.sectionsState;
-    [cell.button setStyle:kFRDLivelyButtonStyleCaretDown animated:YES];
+    if (self.viewController.currentState == self)
+    {
+        NSUInteger indexOfSection = [self.menu.menuSections indexOfObject:self.sectionOfItems];
+        self.viewController.currentState = self.viewController.sectionsState;
+        cell.indexPath = [NSIndexPath indexPathForItem:indexOfSection inSection:0];
+        cell.delegate = (id <AMMenuSectionCellDelegate> )self.viewController.sectionsState;
+        [cell.button setStyle:kFRDLivelyButtonStyleCaretDown animated:YES];
+
+        [self.collectionView performBatchUpdates:^{
+            [@1 upto:self.sectionOfItems.menuItems.count do:^(NSInteger itemNumber) {
+                [self.collectionView deleteItemsAtIndexPaths:@[[NSIndexPath indexPathForItem:itemNumber inSection:0]]];
+            }];
+            
+            [self.collectionView moveItemAtIndexPath:indexPath toIndexPath:[NSIndexPath indexPathForItem:indexOfSection inSection:0]];
+            
+            [@0 upto:self.menu.menuSections.count - 1 do:^(NSInteger itemNumber) {
+                unless(itemNumber == indexOfSection)
+                {
+                    [self.collectionView insertItemsAtIndexPaths:@[[NSIndexPath indexPathForItem:itemNumber inSection:0]]];
+                }
+            }];
+        } completion:nil];
+    }
 }
 @end

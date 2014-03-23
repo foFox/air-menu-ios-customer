@@ -10,13 +10,14 @@
 #import "AMMenuViewController.h"
 
 @implementation AMMenuViewState
--(id)initWithController:(AMMenuViewController *)controller restaurant:(AMRestaurant *)restaurant
+-(id)initWithController:(AMMenuViewController *)controller restaurant:(AMRestaurant *)restaurant collectionView:(UICollectionView *)collectionView
 {
     self = [super init];
     if(self)
     {
         self.viewController = controller;
         self.restaurant = restaurant;
+        self.collectionView = collectionView;
     }
     return self;
 }

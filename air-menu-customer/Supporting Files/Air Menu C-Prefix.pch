@@ -13,6 +13,7 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+    #import <ObjectiveSugar/ObjectiveSugar.h>
     #define ICON_FONT @"Ionicons"
     #define GOTHAM_ULTRA_ITALIC @"GothamHTF-UltraItalic"
     #define GOTHAM_MEDIUM @"GothamHTF-Medium"

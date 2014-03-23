@@ -49,13 +49,15 @@
     self.collectionView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0);
     [self.collectionView registerClass:[AMMenuSectionCell class] forCellWithReuseIdentifier:@"menu_section_cell"];
     [self.collectionView registerClass:[AMMenuItemCell class] forCellWithReuseIdentifier:@"menu_item_cell"];
+    self.collectionView.delegate = (id <UICollectionViewDelegate>) self;
+    self.collectionView.dataSource = (id <UICollectionViewDataSource>) self;
 }
 
 -(void)setupStates
 {
-    self.sectionsState = [[AMMenuViewStateSections alloc] initWithController:self restaurant:self.restaurant];
-    self.itemsState = [[AMMenuViewStateItems alloc] initWithController:self restaurant:self.restaurant];
-    self.itemState = [[AMMenuViewStateItem alloc] initWithController:self restaurant:self.restaurant];
+    self.sectionsState = [[AMMenuViewStateSections alloc] initWithController:self restaurant:self.restaurant collectionView:self.collectionView];
+    self.itemsState = [[AMMenuViewStateItems alloc] initWithController:self restaurant:self.restaurant collectionView:self.collectionView];
+    self.itemState = [[AMMenuViewStateItem alloc] initWithController:self restaurant:self.restaurant collectionView:self.collectionView];
     self.currentState = self.sectionsState;
 }
 
@@ -88,8 +90,6 @@
 -(void)setCurrentState:(AMMenuViewState *)currentState
 {
     _currentState = currentState;
-    self.collectionView.delegate = currentState;
-    self.collectionView.dataSource = currentState;
 }
 
 -(void)setMenu:(AMMenu *)menu
@@ -98,6 +98,23 @@
     self.itemsState.menu = menu;
     self.sectionsState.menu = menu;
     self.itemState.menu = menu;
+}
+
+- (id)forwardingTargetForSelector:(SEL)aSelector
+{
+    if([self.currentState respondsToSelector:aSelector])
+    {
+        return self.currentState;
+    }
+    else
+    {
+        return nil;
+    }
+}
+
+-(BOOL)respondsToSelector:(SEL)aSelector
+{
+    return [super respondsToSelector:aSelector] || [self.currentState respondsToSelector:aSelector];
 }
 
 @end
