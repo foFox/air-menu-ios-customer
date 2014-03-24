@@ -10,7 +10,7 @@
 #import <AXRatingView/AXRatingView.h>
 
 @interface AMMenuItemCell : UICollectionViewCell
-@property (nonatomic, readonly, weak) UILabel *itemNameLabel;
+@property (nonatomic, readonly, weak) UITextView *itemNameLabel;
 @property (nonatomic, readonly, weak) UILabel *itemDescriptionLabel;
 @property (nonatomic, readonly, weak) UILabel *itemPriceLabel;
 @property (nonatomic, readonly, weak) AXRatingView *ratingView;

@@ -32,6 +32,14 @@
     return cell;
 }
 
+
+#pragma mark - Collection View Delegate
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    return CGSizeMake(self.viewController.view.bounds.size.width, 80);
+}
+
 #pragma mark - Section Cell Delegate
 
 -(void)didTapCell:(AMMenuSectionCell *)cell atIndexPath:(NSIndexPath *)indexPath

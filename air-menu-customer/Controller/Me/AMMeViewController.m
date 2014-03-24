@@ -41,7 +41,7 @@
 -(void)viewDidLoad
 {
     [super viewDidLoad];
-    [self getCurrentUser];
+   // [self getCurrentUser];
 }
 
 #pragma mark - Setup

@@ -30,12 +30,31 @@
 		7149CC1A18DCBE220031CDE7 /* AMMenuViewStateSections.m in Sources */ = {isa = PBXBuildFile; fileRef = 7149CC1918DCBE220031CDE7 /* AMMenuViewStateSections.m */; };
 		7149CC1D18DCBF8E0031CDE7 /* AMMenuViewStateItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 7149CC1C18DCBF8E0031CDE7 /* AMMenuViewStateItems.m */; };
 		7149CC2018DCBF960031CDE7 /* AMMenuViewStateItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7149CC1F18DCBF960031CDE7 /* AMMenuViewStateItem.m */; };
+		7149CC3418DE73230031CDE7 /* GothamNarrow-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7149CC2418DE73230031CDE7 /* GothamNarrow-Black.otf */; };
+		7149CC3518DE73230031CDE7 /* GothamNarrow-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7149CC2518DE73230031CDE7 /* GothamNarrow-BlackItalic.otf */; };
+		7149CC3618DE73230031CDE7 /* GothamNarrow-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7149CC2618DE73230031CDE7 /* GothamNarrow-Bold.otf */; };
+		7149CC3718DE73230031CDE7 /* GothamNarrow-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7149CC2718DE73230031CDE7 /* GothamNarrow-BoldItalic.otf */; };
+		7149CC3818DE73230031CDE7 /* GothamNarrow-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7149CC2818DE73230031CDE7 /* GothamNarrow-Book.otf */; };
+		7149CC3918DE73230031CDE7 /* GothamNarrow-BookItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7149CC2918DE73230031CDE7 /* GothamNarrow-BookItalic.otf */; };
+		7149CC3A18DE73230031CDE7 /* GothamNarrow-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7149CC2A18DE73230031CDE7 /* GothamNarrow-Light.otf */; };
+		7149CC3B18DE73230031CDE7 /* GothamNarrow-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7149CC2B18DE73230031CDE7 /* GothamNarrow-LightItalic.otf */; };
+		7149CC3C18DE73230031CDE7 /* GothamNarrow-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7149CC2C18DE73230031CDE7 /* GothamNarrow-Medium.otf */; };
+		7149CC3D18DE73230031CDE7 /* GothamNarrow-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7149CC2D18DE73230031CDE7 /* GothamNarrow-MediumItalic.otf */; };
+		7149CC3E18DE73230031CDE7 /* GothamNarrow-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7149CC2E18DE73230031CDE7 /* GothamNarrow-Thin.otf */; };
+		7149CC3F18DE73230031CDE7 /* GothamNarrow-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7149CC2F18DE73230031CDE7 /* GothamNarrow-ThinItalic.otf */; };
+		7149CC4018DE73230031CDE7 /* GothamNarrow-Ultra.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7149CC3018DE73230031CDE7 /* GothamNarrow-Ultra.otf */; };
+		7149CC4118DE73230031CDE7 /* GothamNarrow-UltraItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7149CC3118DE73230031CDE7 /* GothamNarrow-UltraItalic.otf */; };
+		7149CC4218DE73230031CDE7 /* GothamNarrow-XLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7149CC3218DE73230031CDE7 /* GothamNarrow-XLight.otf */; };
+		7149CC4318DE73230031CDE7 /* GothamNarrow-XLightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7149CC3318DE73230031CDE7 /* GothamNarrow-XLightItalic.otf */; };
+		7149CC4618DE79DA0031CDE7 /* UILabel+AttributesCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7149CC4518DE79DA0031CDE7 /* UILabel+AttributesCopy.m */; };
+		7149CC4718DE89D10031CDE7 /* Air Menu C-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 71FB580F18384A9800803C4E /* Air Menu C-Info.plist */; };
+		7149CC4A18DF94E30031CDE7 /* UITextView+AttributesCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7149CC4918DF94E30031CDE7 /* UITextView+AttributesCopy.m */; };
 		71DCCB5418D12A15007DD1AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71DCCB5318D12A15007DD1AD /* Assets.xcassets */; };
 		71DCCB5A18D1D063007DD1AD /* AMRestaurantBeaconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DCCB5918D1D063007DD1AD /* AMRestaurantBeaconViewController.m */; };
 		71DCCB5C18D1D44B007DD1AD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71DCCB5B18D1D44B007DD1AD /* CoreLocation.framework */; };
 		71FB580818384A9800803C4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71FB580718384A9800803C4E /* Foundation.framework */; };
 		71FB580A18384A9800803C4E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71FB580918384A9800803C4E /* CoreGraphics.framework */; };
-		71FB580C18384A9800803C4E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71FB580B18384A9800803C4E /* UIKit.framework */; };
+		71FB580C18384A9800803C4E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71FB580B18384A9800803C4E /* UIKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		71FB581218384A9800803C4E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 71FB581018384A9800803C4E /* InfoPlist.strings */; };
 		71FB581418384A9800803C4E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FB581318384A9800803C4E /* main.m */; };
 		71FB581818384A9800803C4E /* AMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FB581718384A9800803C4E /* AMAppDelegate.m */; };
@@ -135,6 +154,26 @@
 		7149CC1C18DCBF8E0031CDE7 /* AMMenuViewStateItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMMenuViewStateItems.m; sourceTree = "<group>"; };
 		7149CC1E18DCBF960031CDE7 /* AMMenuViewStateItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMMenuViewStateItem.h; sourceTree = "<group>"; };
 		7149CC1F18DCBF960031CDE7 /* AMMenuViewStateItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMMenuViewStateItem.m; sourceTree = "<group>"; };
+		7149CC2418DE73230031CDE7 /* GothamNarrow-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamNarrow-Black.otf"; sourceTree = "<group>"; };
+		7149CC2518DE73230031CDE7 /* GothamNarrow-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamNarrow-BlackItalic.otf"; sourceTree = "<group>"; };
+		7149CC2618DE73230031CDE7 /* GothamNarrow-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamNarrow-Bold.otf"; sourceTree = "<group>"; };
+		7149CC2718DE73230031CDE7 /* GothamNarrow-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamNarrow-BoldItalic.otf"; sourceTree = "<group>"; };
+		7149CC2818DE73230031CDE7 /* GothamNarrow-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamNarrow-Book.otf"; sourceTree = "<group>"; };
+		7149CC2918DE73230031CDE7 /* GothamNarrow-BookItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamNarrow-BookItalic.otf"; sourceTree = "<group>"; };
+		7149CC2A18DE73230031CDE7 /* GothamNarrow-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamNarrow-Light.otf"; sourceTree = "<group>"; };
+		7149CC2B18DE73230031CDE7 /* GothamNarrow-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamNarrow-LightItalic.otf"; sourceTree = "<group>"; };
+		7149CC2C18DE73230031CDE7 /* GothamNarrow-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamNarrow-Medium.otf"; sourceTree = "<group>"; };
+		7149CC2D18DE73230031CDE7 /* GothamNarrow-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamNarrow-MediumItalic.otf"; sourceTree = "<group>"; };
+		7149CC2E18DE73230031CDE7 /* GothamNarrow-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamNarrow-Thin.otf"; sourceTree = "<group>"; };
+		7149CC2F18DE73230031CDE7 /* GothamNarrow-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamNarrow-ThinItalic.otf"; sourceTree = "<group>"; };
+		7149CC3018DE73230031CDE7 /* GothamNarrow-Ultra.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamNarrow-Ultra.otf"; sourceTree = "<group>"; };
+		7149CC3118DE73230031CDE7 /* GothamNarrow-UltraItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamNarrow-UltraItalic.otf"; sourceTree = "<group>"; };
+		7149CC3218DE73230031CDE7 /* GothamNarrow-XLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamNarrow-XLight.otf"; sourceTree = "<group>"; };
+		7149CC3318DE73230031CDE7 /* GothamNarrow-XLightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamNarrow-XLightItalic.otf"; sourceTree = "<group>"; };
+		7149CC4418DE79DA0031CDE7 /* UILabel+AttributesCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+AttributesCopy.h"; sourceTree = "<group>"; };
+		7149CC4518DE79DA0031CDE7 /* UILabel+AttributesCopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+AttributesCopy.m"; sourceTree = "<group>"; };
+		7149CC4818DF94E30031CDE7 /* UITextView+AttributesCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+AttributesCopy.h"; sourceTree = "<group>"; };
+		7149CC4918DF94E30031CDE7 /* UITextView+AttributesCopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+AttributesCopy.m"; sourceTree = "<group>"; };
 		71DCCB5318D12A15007DD1AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71DCCB5518D1D034007DD1AD /* AMRestaurantBeaconManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMRestaurantBeaconManager.m; path = Other/AMRestaurantBeaconManager.m; sourceTree = "<group>"; };
 		71DCCB5818D1D063007DD1AD /* AMRestaurantBeaconViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMRestaurantBeaconViewController.h; sourceTree = "<group>"; };
@@ -454,6 +493,10 @@
 				7109CBE018D94B7800D6003E /* AMMenuSectionCell.m */,
 				7149CC0C18DCA70B0031CDE7 /* AMMenuItemCell.h */,
 				7149CC0D18DCA70B0031CDE7 /* AMMenuItemCell.m */,
+				7149CC4418DE79DA0031CDE7 /* UILabel+AttributesCopy.h */,
+				7149CC4518DE79DA0031CDE7 /* UILabel+AttributesCopy.m */,
+				7149CC4818DF94E30031CDE7 /* UITextView+AttributesCopy.h */,
+				7149CC4918DF94E30031CDE7 /* UITextView+AttributesCopy.m */,
 			);
 			path = Order;
 			sourceTree = "<group>";
@@ -580,6 +623,22 @@
 		71FEA52B18D2943500BA18AE /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				7149CC2418DE73230031CDE7 /* GothamNarrow-Black.otf */,
+				7149CC2518DE73230031CDE7 /* GothamNarrow-BlackItalic.otf */,
+				7149CC2618DE73230031CDE7 /* GothamNarrow-Bold.otf */,
+				7149CC2718DE73230031CDE7 /* GothamNarrow-BoldItalic.otf */,
+				7149CC2818DE73230031CDE7 /* GothamNarrow-Book.otf */,
+				7149CC2918DE73230031CDE7 /* GothamNarrow-BookItalic.otf */,
+				7149CC2A18DE73230031CDE7 /* GothamNarrow-Light.otf */,
+				7149CC2B18DE73230031CDE7 /* GothamNarrow-LightItalic.otf */,
+				7149CC2C18DE73230031CDE7 /* GothamNarrow-Medium.otf */,
+				7149CC2D18DE73230031CDE7 /* GothamNarrow-MediumItalic.otf */,
+				7149CC2E18DE73230031CDE7 /* GothamNarrow-Thin.otf */,
+				7149CC2F18DE73230031CDE7 /* GothamNarrow-ThinItalic.otf */,
+				7149CC3018DE73230031CDE7 /* GothamNarrow-Ultra.otf */,
+				7149CC3118DE73230031CDE7 /* GothamNarrow-UltraItalic.otf */,
+				7149CC3218DE73230031CDE7 /* GothamNarrow-XLight.otf */,
+				7149CC3318DE73230031CDE7 /* GothamNarrow-XLightItalic.otf */,
 				71FEA52C18D2944F00BA18AE /* ionicons.ttf */,
 				71FEA52D18D2944F00BA18AE /* mensch-bold.ttf */,
 				71FEA52E18D2944F00BA18AE /* mensch-inline.ttf */,
@@ -695,25 +754,42 @@
 				71FEA55218D2944F00BA18AE /* GothamHTF-LightCondensed.otf in Resources */,
 				71FEA54E18D2944F00BA18AE /* GothamHTF-Book.otf in Resources */,
 				71FEA55118D2944F00BA18AE /* GothamHTF-Light.otf in Resources */,
+				7149CC3F18DE73230031CDE7 /* GothamNarrow-ThinItalic.otf in Resources */,
+				7149CC3D18DE73230031CDE7 /* GothamNarrow-MediumItalic.otf in Resources */,
 				71FEA55318D2944F00BA18AE /* GothamHTF-LightItalic.otf in Resources */,
 				71FEA54918D2944F00BA18AE /* GothamHTF-Black.otf in Resources */,
 				71FEA54618D2944F00BA18AE /* mensch-inline.ttf in Resources */,
 				71FEA55518D2944F00BA18AE /* GothamHTF-MediumCondensed.otf in Resources */,
+				7149CC3B18DE73230031CDE7 /* GothamNarrow-LightItalic.otf in Resources */,
 				7109CBF518DA4FD800D6003E /* sample_image.jpeg in Resources */,
 				71DCCB5418D12A15007DD1AD /* Assets.xcassets in Resources */,
+				7149CC4118DE73230031CDE7 /* GothamNarrow-UltraItalic.otf in Resources */,
+				7149CC4218DE73230031CDE7 /* GothamNarrow-XLight.otf in Resources */,
 				71FEA55418D2944F00BA18AE /* GothamHTF-Medium.otf in Resources */,
 				71FEA55618D2944F00BA18AE /* GothamHTF-Thin.otf in Resources */,
 				71FEA54418D2944F00BA18AE /* ionicons.ttf in Resources */,
+				7149CC3E18DE73230031CDE7 /* GothamNarrow-Thin.otf in Resources */,
+				7149CC3518DE73230031CDE7 /* GothamNarrow-BlackItalic.otf in Resources */,
+				7149CC4718DE89D10031CDE7 /* Air Menu C-Info.plist in Resources */,
 				71FEA54818D2944F00BA18AE /* mensch.ttf in Resources */,
+				7149CC3A18DE73230031CDE7 /* GothamNarrow-Light.otf in Resources */,
 				71FB581218384A9800803C4E /* InfoPlist.strings in Resources */,
 				71FEA55818D2944F00BA18AE /* GothamHTF-Ultra.otf in Resources */,
+				7149CC3418DE73230031CDE7 /* GothamNarrow-Black.otf in Resources */,
+				7149CC4018DE73230031CDE7 /* GothamNarrow-Ultra.otf in Resources */,
 				71FEA54B18D2944F00BA18AE /* GothamHTF-Bold.otf in Resources */,
 				71FEA54718D2944F00BA18AE /* mensch-thin.ttf in Resources */,
+				7149CC3718DE73230031CDE7 /* GothamNarrow-BoldItalic.otf in Resources */,
 				71FEA54D18D2944F00BA18AE /* GothamHTF-BoldItalic.otf in Resources */,
 				71FEA55718D2944F00BA18AE /* GothamHTF-ThinItalic.otf in Resources */,
 				71FEA54518D2944F00BA18AE /* mensch-bold.ttf in Resources */,
 				71FEA55A18D2944F00BA18AE /* GothamHTF-XLight.otf in Resources */,
+				7149CC3818DE73230031CDE7 /* GothamNarrow-Book.otf in Resources */,
+				7149CC4318DE73230031CDE7 /* GothamNarrow-XLightItalic.otf in Resources */,
 				71FEA55018D2944F00BA18AE /* GothamHTF-BookItalic.otf in Resources */,
+				7149CC3C18DE73230031CDE7 /* GothamNarrow-Medium.otf in Resources */,
+				7149CC3618DE73230031CDE7 /* GothamNarrow-Bold.otf in Resources */,
+				7149CC3918DE73230031CDE7 /* GothamNarrow-BookItalic.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -766,11 +842,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7109CBE518D9F04C00D6003E /* AMDescribedLabel.m in Sources */,
+				7149CC4A18DF94E30031CDE7 /* UITextView+AttributesCopy.m in Sources */,
 				7109CBDB18D7535200D6003E /* AMPreviousViewController.m in Sources */,
 				7109CBE818D9F4B500D6003E /* AMUserView.m in Sources */,
 				7109CBCF18D7531F00D6003E /* AMLoyaltyViewController.m in Sources */,
 				71FB581818384A9800803C4E /* AMAppDelegate.m in Sources */,
 				7149CC0E18DCA70B0031CDE7 /* AMMenuItemCell.m in Sources */,
+				7149CC4618DE79DA0031CDE7 /* UILabel+AttributesCopy.m in Sources */,
 				7109CBCC18D752A200D6003E /* AMMeViewController.m in Sources */,
 				7109CBD218D7532A00D6003E /* AMVoucherViewController.m in Sources */,
 				7109CBE118D94B7800D6003E /* AMMenuSectionCell.m in Sources */,

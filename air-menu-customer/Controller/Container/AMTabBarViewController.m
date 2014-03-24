@@ -85,7 +85,7 @@
     [self.container autoPinEdge:ALEdgeLeading toEdge:ALEdgeLeading ofView:self.view];
     [self.container autoPinEdge:ALEdgeTrailing toEdge:ALEdgeTrailing ofView:self.view];
     [self.container autoPinEdge:ALEdgeTop toEdge:ALEdgeTop ofView:self.view];
-    [self.container autoPinEdge:ALEdgeBottom toEdge:ALEdgeTop ofView:self.tabBar];
+    [self.container autoPinEdge:ALEdgeBottom toEdge:ALEdgeTop ofView:self.tabBar withOffset:-1.0f];
 }
 
 -(void)createMarker
