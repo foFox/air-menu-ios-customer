@@ -56,5 +56,12 @@
     #define MENSCH_BOLD @"MenschBold"
     #define MENSCH_REGULAR @"MenschRegular"
     #define MENSCH_THIN @"MenschThin"
+
+    #define IDLEWILD_BOLD @"Idlewild-Bold"
+    #define IDLEWILD_BOOK @"Idlewild-Book"
+    #define IDLEWILD_LIGHT @"Idlewild-Light"
+    #define IDLEWILD_MEDIUM @"Idlewild-Medium"
+    #define IDLEWILD_THIN @"Idlewild-Thin"
+
     #define DEGREES_TO_RADIANS(angle) ((angle) / 180.0 * M_PI)
 #endif

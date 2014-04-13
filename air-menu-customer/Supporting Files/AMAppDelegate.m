@@ -11,6 +11,9 @@
 #import <AirMenuKit/AMClient.h>
 #import "AMRestaurantBeaconViewController.h"
 #import "AMNavigationViewController.h"
+#import <MSDynamicsDrawerViewController/MSDynamicsDrawerStyler.h>
+#import "AMMeViewController.h"
+#import "AMPickerViewController.h"
 
 @implementation AMAppDelegate
 
@@ -18,9 +21,15 @@
 {
     
     [[AMClient sharedClient] isLoggedIn];
+    [[UIApplication sharedApplication] registerForRemoteNotificationTypes:UIRemoteNotificationTypeAlert |
+                                                                          UIRemoteNotificationTypeBadge |
+                                                                          UIRemoteNotificationTypeSound];
+    
+    
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.rootViewController = [[AMNavigationViewController alloc] init];
+    MSDynamicsDrawerViewController *container = [[MSDynamicsDrawerViewController alloc] init];
+    self.window.rootViewController = container;
     [self.window makeKeyAndVisible];
     [[AMClient sharedClient] authenticateWithClientID:@"1ea6342ac153d74ac305e04f949da93bad3eab7401d9160206e65288bfabee64"
                                          clientSecret:@"541b2f36d19a717077195286212aa1e1cea63faea4cfa22963475512704a2684"
@@ -34,9 +43,30 @@
                                                }
                                            }
      ];
-    UIColor *background = [[UIColor alloc] initWithPatternImage:[self backgroundImage]];
-    self.window.backgroundColor = background;    
+    
+    UIImage *image = [UIImage imageNamed:@"background@2x.png"];
+    self.window.layer.contents = (id) image.CGImage;
+    [container setDrawerViewController:[[AMMeViewController alloc] init] forDirection:MSDynamicsDrawerDirectionRight];
+    [container setRevealWidth:310 forDirection:MSDynamicsDrawerDirectionRight];
+    [container addStylersFromArray:@[[MSDynamicsDrawerParallaxStyler styler], [MSDynamicsDrawerParallaxStyler styler], [MSDynamicsDrawerShadowStyler styler], [MSDynamicsDrawerFadeStyler styler]] forDirection:MSDynamicsDrawerDirectionRight];
+    AMPickerViewController *pickerViewController = [[AMPickerViewController alloc] init];
+    [container setDrawerViewController:pickerViewController forDirection:MSDynamicsDrawerDirectionLeft];
+    [container addStylersFromArray:@[[MSDynamicsDrawerScaleStyler styler], [MSDynamicsDrawerFadeStyler styler], [MSDynamicsDrawerShadowStyler styler]] forDirection:MSDynamicsDrawerDirectionLeft];
+    [container setRevealWidth:310 forDirection:MSDynamicsDrawerDirectionLeft];
+    container.paneViewController = [[UIViewController alloc] init];
+    container.paneViewController.view.backgroundColor = [UIColor whiteColor];
+    pickerViewController.controller = container;
     return YES;
+}
+
+-(void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error
+{
+    NSLog(@"error %@", error);
+}
+
+-(void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
+{
+    NSLog(@"Token : %@", deviceToken);
 }
 
 -(UIImage *)backgroundImage

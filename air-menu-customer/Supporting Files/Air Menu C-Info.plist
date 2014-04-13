@@ -9,7 +9,7 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.air-menu.${PRODUCT_NAME:rfc1034identifier}</string>
+	<string>com.air-menu</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -26,6 +26,11 @@
 	<true/>
 	<key>UIAppFonts</key>
 	<array>
+		<string>Idlewild-Bold.otf</string>
+		<string>Idlewild-Book.otf</string>
+		<string>Idlewild-Light.otf</string>
+		<string>Idlewild-Medium.otf</string>
+		<string>Idlewild-Thin.otf</string>
 		<string>mensch-bold.ttf</string>
 		<string>mensch-inline.ttf</string>
 		<string>mensch-thin.ttf</string>

@@ -42,9 +42,9 @@
 -(void)setup
 {
     [self setupUserPicture];
-    [self setupSpacer];
+  //  [self setupSpacer];
     [self setupNameLabel];
-    [self setupTypeLabel];
+  //  [self setupTypeLabel];
 }
 
 -(void)setupUserPicture
@@ -57,7 +57,7 @@
     [self.userPicture autoPinEdge:ALEdgeLeading toEdge:ALEdgeLeading ofView:self withOffset:20.0f];
     [self.userPicture autoAlignAxis:ALAxisHorizontal toSameAxisOfView:self];
     self.userPicture.layer.masksToBounds = YES;
-    self.userPicture.layer.borderColor = [UIColor whiteColor].CGColor;
+    self.userPicture.layer.borderColor = [[UIColor whiteColor] colorWithAlphaComponent:1.0].CGColor;
     self.userPicture.layer.borderWidth = 3.0f;
 }
 
@@ -77,11 +77,16 @@
     UILabel *nameLabel = [UILabel newAutoLayoutView];
     self.nameLabel = nameLabel;
     [self addSubview:self.nameLabel];
-    [@[self.nameLabel, self.spacer] autoAlignViewsToEdge:ALEdgeLeading];
-    [self.nameLabel autoPinEdge:ALEdgeBottom toEdge:ALEdgeTop ofView:self.spacer withOffset:-10.f];
+    //[@[self.nameLabel, self.spacer] autoAlignViewsToEdge:ALEdgeLeading];
+    //[self.nameLabel autoPinEdge:ALEdgeBottom toEdge:ALEdgeTop ofView:self.spacer withOffset:-10.f];
     self.nameLabel.textColor = [UIColor whiteColor];
-    self.nameLabel.font = [UIFont fontWithName:GOTHAM_LIGHT size:25.0f];
-    [self.spacer autoMatchDimension:ALDimensionWidth toDimension:ALDimensionWidth ofView:self.nameLabel withOffset:0];
+    self.nameLabel.font = [UIFont fontWithName:GOTHAM_LIGHT size:27.0f];
+   // [self.spacer autoMatchDimension:ALDimensionWidth toDimension:ALDimensionWidth ofView:self.nameLabel withOffset:0];
+    [self.nameLabel autoPinEdge:ALEdgeLeading toEdge:ALEdgeTrailing ofView:self.userPicture withOffset:0.0];
+    [self.nameLabel autoPinEdge:ALEdgeTrailing toEdge:ALEdgeTrailing ofView:self withOffset:-20.0f];
+    [self.nameLabel autoPinEdge:ALEdgeTop toEdge:ALEdgeTop ofView:self];
+    [self.nameLabel autoPinEdge:ALEdgeBottom toEdge:ALEdgeBottom ofView:self];
+    self.nameLabel.textAlignment = NSTextAlignmentCenter;
 }
 
 -(void)setupTypeLabel

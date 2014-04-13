@@ -12,6 +12,8 @@
 #import "AMDescribedLabel.h"
 #import "AMUserView.h"
 #import "AMDotSpacer.h"
+#import <FlatPillButton/FlatPillButton.h>
+#import "AMLineSpacer.h"
 
 @interface AMMeViewController ()
 @property (nonatomic, readwrite, weak) AMUserView *userView;
@@ -41,7 +43,7 @@
 -(void)viewDidLoad
 {
     [super viewDidLoad];
-   // [self getCurrentUser];
+    [self getCurrentUser];
 }
 
 #pragma mark - Setup
@@ -54,6 +56,7 @@
     [self createPhoneLabel];
     [self createLogoutButton];
     [self createBottomSpacer];
+    [self createBackground];
 }
 
 -(void)createUserView
@@ -75,12 +78,12 @@
 {
     AMDotSpacer *spacer = [AMDotSpacer newAutoLayoutView];
     self.topSpacer = spacer;
-    self.topSpacer.alpha = 0.7;
+    self.topSpacer.alpha = 0;
     [self.view addSubview:self.topSpacer];
-    [self.topSpacer autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:self.userView withOffset:50.0f];
-    [self.topSpacer autoPinEdge:ALEdgeLeading toEdge:ALEdgeLeading ofView:self.view withOffset:20.0f];
-    [self.topSpacer autoPinEdge:ALEdgeTrailing toEdge:ALEdgeTrailing ofView:self.view withOffset:-20.0f];
-    [self.topSpacer autoSetDimension:ALDimensionHeight toSize:2.0f];
+    [self.topSpacer autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:self.userView withOffset:30.0f];
+    [self.topSpacer autoPinEdge:ALEdgeLeading toEdge:ALEdgeLeading ofView:self.view withOffset:0];
+    [self.topSpacer autoPinEdge:ALEdgeTrailing toEdge:ALEdgeTrailing ofView:self.view withOffset:0];
+    [self.topSpacer autoSetDimension:ALDimensionHeight toSize:1.5f];
 }
 
 -(void)createUsernameLabel
@@ -102,7 +105,7 @@
     [self.view addSubview:self.emailLabel];
     [self.emailLabel autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:self.usernameLabel withOffset:20.0];
     [self.emailLabel autoPinEdge:ALEdgeLeading toEdge:ALEdgeLeading ofView:self.view withOffset:20.0];
-    [self.emailLabel autoPinEdge:ALEdgeTrailing toEdge:ALEdgeTrailing ofView:self.view withOffset:20.0];
+    [self.emailLabel autoPinEdge:ALEdgeTrailing toEdge:ALEdgeTrailing ofView:self.view withOffset:0];
     [self.emailLabel autoSetDimension:ALDimensionHeight toSize:60];
     self.emailLabel.titleLabel.text = @"email address :";
 }
@@ -114,7 +117,7 @@
     [self.view addSubview:self.phoneLabel];
     [self.phoneLabel autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:self.emailLabel withOffset:20];
     [self.phoneLabel autoPinEdge:ALEdgeLeading toEdge:ALEdgeLeading ofView:self.view withOffset:20];
-    [self.phoneLabel autoPinEdge:ALEdgeTrailing toEdge:ALEdgeTrailing ofView:self.view withOffset:20];
+    [self.phoneLabel autoPinEdge:ALEdgeTrailing toEdge:ALEdgeTrailing ofView:self.view withOffset:0];
     [self.phoneLabel autoSetDimension:ALDimensionHeight toSize:60];
     self.phoneLabel.titleLabel.text = @"phone number :";
     self.phoneLabel.textLabel.text = @"00353 879363860";
@@ -124,29 +127,37 @@
 {
     AMDotSpacer *spacer = [AMDotSpacer newAutoLayoutView];
     self.bottomSpacer = spacer;
-    self.bottomSpacer.alpha = 0.7;
+    self.bottomSpacer.alpha = 0;
     [self.view addSubview:self.bottomSpacer];
     [self.bottomSpacer autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:self.phoneLabel withOffset:20.0f];
-    [self.bottomSpacer autoPinEdge:ALEdgeLeading toEdge:ALEdgeLeading ofView:self.view withOffset:20.0f];
-    [self.bottomSpacer autoPinEdge:ALEdgeTrailing toEdge:ALEdgeTrailing ofView:self.view withOffset:-20.0f];
-    [self.bottomSpacer autoSetDimension:ALDimensionHeight toSize:2.0f];
+    [self.bottomSpacer autoPinEdge:ALEdgeLeading toEdge:ALEdgeLeading ofView:self.view withOffset:0.0f];
+    [self.bottomSpacer autoPinEdge:ALEdgeTrailing toEdge:ALEdgeTrailing ofView:self.view withOffset:0.0f];
+    [self.bottomSpacer autoSetDimension:ALDimensionHeight toSize:1.5f];
 }
 
 -(void)createLogoutButton
 {
-    UIButton *logoutButton = [UIButton buttonWithType:UIButtonTypeSystem];
+    FlatPillButton *logoutButton = [FlatPillButton button];
+    logoutButton.bold = NO;
     self.logoutButton = logoutButton;
     [self.view addSubview:self.logoutButton];
     self.logoutButton.translatesAutoresizingMaskIntoConstraints = NO;
-    [self.logoutButton autoPinEdge:ALEdgeBottom toEdge:ALEdgeBottom ofView:self.view withOffset:-20.0f];
+    [self.logoutButton autoPinEdge:ALEdgeBottom toEdge:ALEdgeBottom ofView:self.view withOffset:-45.0f];
+    self.logoutButton.titleLabel.font = [UIFont fontWithName:GOTHAM_MEDIUM size:25];
     [self.logoutButton setTitle:@"LOGOUT" forState:UIControlStateNormal];
-    self.logoutButton.titleLabel.font = [UIFont fontWithName:MENSCH_THIN size:30];
-    [self.logoutButton setTitleColor:[UIColor colorWithRed:1.0f/255.0f green:57.0f/255.0f blue:83.0f/255.0f alpha:1.0] forState:UIControlStateNormal];
+    [self.logoutButton setTitleColor:[UIColor colorWithRed:255.0f/255.0f green:255.0f/255.0f blue:255.0f/255.0f alpha:1.0] forState:UIControlStateNormal];
     [self.logoutButton autoAlignAxisToSuperviewAxis:ALAxisVertical];
-    self.logoutButton.layer.shadowColor = [[UIColor blackColor] colorWithAlphaComponent:0.5].CGColor;
-    self.logoutButton.layer.shadowOpacity = 1.0;
-    self.logoutButton.layer.shadowRadius = 1.5;
-    self.logoutButton.layer.shadowOffset = CGSizeMake(0.0f,2.0f);
+    [UIView autoSetPriority:UILayoutPriorityDefaultHigh
+             forConstraints:^{
+                 [self.logoutButton autoSetContentCompressionResistancePriorityForAxis:ALAxisHorizontal];
+             }];
+    
+    [UIView autoSetPriority:UILayoutPriorityDefaultLow
+             forConstraints:^{
+                 [self.logoutButton autoSetContentHuggingPriorityForAxis:ALAxisHorizontal];
+             }];
+    
+    [self.logoutButton.titleLabel sizeToFit];
 }
 
 -(void)getCurrentUser
@@ -158,6 +169,17 @@
             [self updateView];
         }
     }];
+}
+
+-(void)createBackground
+{
+    UIView *view = [UIView newAutoLayoutView];
+    [self.view insertSubview:view atIndex:0];
+    [view autoPinEdge:ALEdgeTop toEdge:ALEdgeTop ofView:self.topSpacer];
+    [view autoPinEdge:ALEdgeBottom toEdge:ALEdgeBottom ofView:self.bottomSpacer];
+    [view autoPinEdge:ALEdgeLeading toEdge:ALEdgeLeading ofView:self.view];
+    [view autoPinEdge:ALEdgeTrailing toEdge:ALEdgeTrailing ofView:self.view];
+    view.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.1];
 }
 
 -(void)updateView
